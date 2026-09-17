@@ -57,7 +57,7 @@ def extract_pdf_pages_as_images(pdf_bytes):
     return images
 
 def analyze_page_layout(image):
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     prompt = """
     Analyze this page of multiple-choice questions. 
     Find each question's vertical start and end points as a percentage of height (0.0 to 1.0).
